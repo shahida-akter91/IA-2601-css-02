@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Product Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="product-card">
+
+        <div class="save-badge">
+            Save: 1,000৳
+        </div>
+
+        <img
+            class="product-image"
+            src="55.webp"
+            alt="Computer Monitor"
+        >
+
+        <h2 class="product-title">
+            GEESUU BAFANG M215LF2 21.5"
+            100Hz FHD IPS Monitor
+        </h2>
+
+        <ul class="product-details">
+
+        
+        </ul>
+
+        <div class="price-section">
+            <span class="current-price">7,999৳</span>
+            <span class="old-price">8,999৳</span>
+        </div>
+
+        <button class="buy-btn" onclick="buyNow()">
+            Buy Now
+        </button>
+
+        <button class="compare-btn" onclick="compareProduct()">
+            ▣ Add to Compare
+        </button>
+
+    </div>
+
+    <script>
+        function buyNow() {
+            alert("You clicked Buy Now!");
+        }
+
+        function compareProduct() {
+            const button = document.querySelector(".compare-btn");
+
+            if (button.innerText.includes("Add")) {
+                button.innerText = "✓ Added to Compare";
+            } else {
+                button.innerText = "▣ Add to Compare";
+            }
+        }
+    </script>
+
+</body>
+</html>

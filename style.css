@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(31, 81, 17, 0.1);
+}
+
+/* Save Badge */
+.save-badge {
+    display: inline-block;
+    background: #76268e;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 0 20px 20px 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 21px;
+    line-height: 1.4;
+    color: #170acb;
+    margin-bottom: 20px;
+}
+.product-title:hover{
+   color: rgb(194, 16, 25);
+}
+
+/* Product Details */
+.product-details {
+    padding-left: 25px;
+    color: #777;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+/* Price */
+.price-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.current-price {
+    color: #eb194a;
+    font-size: 26px;
+}
+
+.old-price {
+    color: #777;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+/* Buy Button */
+.buy-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(32, 8, 62);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: rgb(20, 185, 185);
+}
+
+/* Compare Button */
+.compare-btn {
+    display: block;
+    margin: 22px auto 5px;
+    border: none;
+    background: transparent;
+    color: #260bc1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.compare-btn:hover {
+    color: #b10d28;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .product-card {
+        padding: 18px;
+    }
+
+    .product-title {
+        font-size: 19px;
+    }
+
+    .product-details {
+        font-size: 14px;
+    }
+}
+
